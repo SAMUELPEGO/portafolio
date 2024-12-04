@@ -1,0 +1,72 @@
+:root {
+    --body-bg: #140523;
+    --body-bg-white: #fdf7ff;
+    --btn-bg-pink: #c31a58;
+    --btn-bg-hover: #c31a58;
+    --text-color: #fdf7ff;
+    --text-color-low: #6d6a77;
+    --text-font-big: 2rem;
+}
+
+.text-font-big {
+    font-size: 1.5rem;
+}
+
+.body-bg {
+    background: var(--body-bg);
+}
+
+.btn-bg-pink {
+    background: var(--btn-bg-pink);
+    box-shadow: 4px 4px 1px #c31a5897;
+}
+
+.btn-bg-hover {
+    background: var(--btn-bg-hover);
+}
+
+.body-bg-white {
+    background: var(--body-bg-white);
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+.text-color-low {
+    color: var(--text-color-low);
+}
+
+body {
+    padding: 20px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color) !important;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+a:hover {
+    background: var(--btn-bg-hover);
+    color: var(--text-color);
+
+}
+
+.transition {
+    transition: .5s all;
+
+}
+.non-shadow:hover {
+    box-shadow: none;
+    transform: translate(4px, 4px);
+}
+.circle-border {
+ border: 10px solid var(--btn-bg-pink);
+ 
+}
