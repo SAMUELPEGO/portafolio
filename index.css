@@ -1,7 +1,12 @@
+@import "./animations.css";
 :root {
     --body-bg: #140523;
     --body-bg-white: #fdf7ff;
+    --btn-bg-green: #1ac184;
+    --btn-shadow-green: #1ac184a3;
+    --btn-bg-orange:#c1311a;
     --btn-bg-pink: #c31a58;
+    --btn-shadow-pink: #c31a5897;
     --btn-bg-hover: #c31a58;
     --text-color: #fdf7ff;
     --text-color-low: #6d6a77;
@@ -18,7 +23,20 @@
 
 .btn-bg-pink {
     background: var(--btn-bg-pink);
-    box-shadow: 4px 4px 1px #c31a5897;
+}
+
+.btn-bg-green {
+    background: var(--btn-bg-green);
+}
+
+.btn-shadow-pink {
+    box-shadow: 0px 6px 1px var(--btn-shadow-pink);
+
+}
+
+.btn-shadow-green {
+    box-shadow: 0px 6px 1px var(--btn-shadow-green);
+
 }
 
 .btn-bg-hover {
@@ -38,13 +56,15 @@
 }
 
 body {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     font-weight: 900;
     font-family: 'Courier New', Courier, monospace;
 }
+
 img {
     width: 100%;
 }
+
 a {
     text-decoration: none;
     color: var(--text-color) !important;
@@ -55,18 +75,76 @@ a {
 a:hover {
     background: var(--btn-bg-hover);
     color: var(--text-color);
-
 }
-
+footer a:hover {
+ background: none;
+ color: none;
+}
+.footer a{
+    width: 50px;
+    padding: 10px;
+    background: var(--text-color);
+    border-radius: 100%;
+}
+.footer {
+    background: var(--btn-bg-orange);
+    padding: 20px;
+    border-radius: 50px;
+}
 .transition {
     transition: .5s all;
 
 }
+
 .non-shadow:hover {
     box-shadow: none;
-    transform: translate(4px, 4px);
+    transform: translate(0px, 4px);
 }
-.circle-border {
- border: 10px solid var(--btn-bg-pink);
- 
+
+.border-pink {
+    border: 10px solid var(--btn-bg-pink);
+
+}
+
+.border-pink-light {
+    border: 4px solid var(--btn-bg-pink);
+
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.aspect-ratio-square {
+    aspect-ratio: 1/1;
+
+}
+
+.height-relative-viewport {
+    height: 30vh;
+}
+
+.badge {
+    background: var(--btn-bg-orange) !important;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.btn-scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    background: var(--btn-bg-pink);
+    color: var(--text-color);
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    box-shadow: 2px 2px 4px var(--btn-shadow-pink);
+
+}
+
+.wobble-hor-bottom {
+	-webkit-animation: wobble-hor-bottom 1.8s backwards 1;
+	        animation: wobble-hor-bottom 1.8s backwards 1;
+        
 }

@@ -14,8 +14,8 @@
   <title>Portfolio</title>
 </head>
 
-<body class="body-bg d-flex flex-wrap justify-content-center gap-5">
-  <nav class="navbar navbar-expand-sm ">
+<body class="body-bg d-flex flex-wrap justify-content-center gap-5 flex-column">
+  <nav class="navbar navbar-expand-sm" id="top">
     <div class="container-fluid">
       <button class="navbar-toggler mx-auto my-0 body-bg-white" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,46 +24,177 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav gap-3 text-center">
           <li class="nav-item">
-            <a class="nav-link px-3" href="#ssss">Proyectos</a>
+            <a class="nav-link px-3" href="#proyectos">Proyectos</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link  px-3" href="#ddd">Habilidades</a>
+            <a class="nav-link  px-3" href="#habilidades">Habilidades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  px-3" href="#aaa">Sobre mi</a>
+            <a class="nav-link  px-3" href="#sobre mi">Sobre mi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  px-3" href="#111">Contacto</a>
+            <a class="nav-link  px-3" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <main>
-    <div class="container">
+  <main class="d-flex flex-column gap-5">
+    <section class="container section-introduction" id="introduction">
       <div class="row align-items-start text-font-big gap-5 justify-content-center">
         <div class="col-md-5 col-sm-10 text-center text-sm-center text-md-start">
           <div class="card text-color body-bg">
             <p class="card-header fs-6">Hola me llamo</p>
             <div class="card-body">
-              
+
               <p class="card-title fs-1">Samuel Pego</p>
               <p class=" fs-4 ">Soy desarrollador web</p>
-              <p class="card-text text-color-low fs-4">Bienvenido a mi portafolio aqui puedes encontrar todos mis proyectos
+              <p class="card-text text-color-low fs-4">Bienvenido a mi portafolio aqui puedes encontrar todos mis
+                proyectos
               </p>
               <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                <a href="#" class="px-3 py-2 btn-bg-pink non-shadow transition">Contáctame</a>
+                <a href="#"
+                  class="px-3 py-2 btn-bg-green btn-shadow-green non-shadow transition wobble-hor-bottom">Contáctame</a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-5 col-sm-10">
-          <img src="./public/assets/Designer.jpeg" alt="" class="circle-border rounded-circle">
+          <img src="./public/assets/Designer.jpeg" alt="" class="border-pink rounded-circle">
         </div>
 
       </div>
-    </div>
+    </section>
+    <section class="container section-projects">
+      <h2 class="text-center p-5 fw-bolder text-color" id="proyectos">Proyectos</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 border-pink-light">
+            <img src="./public/assets/Designer.jpeg"
+              class="card-img-top object-fit-cover aspect-ratio-square height-relative-viewport" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-pink-light">
+            <img src="./public/assets/diseno.avif"
+              class="card-img-top object-fit-cover aspect-ratio-square height-relative-viewport" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-pink-light">
+            <img src="./public/assets/diseno.avif"
+              class="card-img-top object-fit-cover  aspect-ratio-square height-relative-viewport border-pink" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-pink-light">
+            <img src="./public/assets/diseno.avif"
+              class="card-img-top object-fit-cover  aspect-ratio-square height-relative-viewport border-pink" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-pink-light">
+            <img src="./public/assets/diseno.avif"
+              class="card-img-top object-fit-cover  aspect-ratio-square height-relative-viewport border-pink" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-pink-light">
+            <img src="./public/assets/diseno.avif"
+              class="card-img-top object-fit-cover  aspect-ratio-square height-relative-viewport border-pink" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container section-habilidades" id="habilidades">
+      <h2 class="text-center p-5 fw-bolder text-color" id="habilidades">Habilidades</h2>
+      <div class="d-flex justify-content-center flex-wrap gap-3">
+        <span class="badge text-bg-primary">
+          HTML
+        </span>
+        <span class="badge text-bg-primary">CSS</span>
+        <span class="badge text-bg-primary">jAVASCRIPT</span>
+        <span class="badge text-bg-primary">TYPESCRIPT</span>
+        <span class="badge text-bg-primary">BOOTSTRAP</span>
+        <span class="badge text-bg-primary">MATERIAL UI</span>
+        <span class="badge text-bg-primary">REACT</span>
+        <span class="badge text-bg-primary">NEXTJS</span>
+        <span class="badge text-bg-primary">GIT</span>
+        <span class="badge text-bg-primary">GITHUB</span>
+
+      </div>
+    </section>
+    <section class="container text-color">
+      <h2 class="text-center fw-bolder text-color" id="sobre mi">Sobre mi</h2>
+      <p class="text-color">¡Hola! soy un entusiasta programador en busca de oportunidades para embarcarme en mi primer
+        trabajo como freelancer y adquirir experiencia en el emocionante mundo del desarrollo de software. Aunque soy
+        principiante, estoy comprometido con el aprendizaje continuo y en mejorar mis habilidades día a día.</p>
+      <h3 class="fw-bolder text-center ">Objetivos</h3>
+      <p>Mi objetivo como programador principiante es colaborar en proyectos que me permitan crecer profesionalmente,
+        aprender de la experiencia y contribuir de manera positiva. Estoy ansioso por encontrar oportunidades para
+        trabajar en equipo, enfrentar desafíos y ofrecer soluciones innovadoras.</p>
+
+      ¡Estoy emocionado por la oportunidad de aprender y crecer como freelancer en el mundo del desarrollo de software!
+      ¡Contáctame para explorar cómo puedo contribuir a tus proyectos!
+    </section>
+    <footer class="container footer d-flex justify-content-center align-items-start">
+      <div class="d-flex gap-5 flex-wrap justify-content-center" id="contacto">
+        <a href=""><img src="./public/assets/icons/whatsapp_logo_icon.svg" alt=""></a>
+        <a href=""><img src="./public/assets/icons/telegram_icon.svg" alt=""></a>
+        <a href=""><img src="./public/assets/icons/messenger_icon.svg" alt=""></a>
+        <a href=""><img src="./public/assets/icons/mail_logo_social_icon.svg" alt=""></a>
+      </div>
+    </footer>
   </main>
+  <a class="btn-scroll-top" href="#top"><img src="./public/assets/icons/arrow-up.svg" alt="" width="25px"
+      height="25px"></a>
 </body>
 
 </html>
