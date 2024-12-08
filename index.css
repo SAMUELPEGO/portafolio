@@ -6,6 +6,7 @@
     --btn-shadow-green: #1ac184a3;
     --btn-bg-orange:#c1311a;
     --btn-bg-pink: #c31a58;
+    --btn-bg-pink-low: #825968;
     --btn-shadow-pink: #c31a5897;
     --btn-bg-hover: #c31a58;
     --text-color: #fdf7ff;
@@ -28,7 +29,12 @@
 .btn-bg-green {
     background: var(--btn-bg-green);
 }
-
+.btn-bg-orange {
+    background: var(--btn-bg-orange);
+}
+.btn-bg-pink-low {
+background: var(--btn-bg-pink-low);
+}
 .btn-shadow-pink {
     box-shadow: 0px 6px 1px var(--btn-shadow-pink);
 
