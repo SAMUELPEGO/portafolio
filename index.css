@@ -1,10 +1,11 @@
 @import "./animations.css";
+
 :root {
     --body-bg: #140523;
     --body-bg-white: #fdf7ff;
     --btn-bg-green: #1ac184;
     --btn-shadow-green: #1ac184a3;
-    --btn-bg-orange:#c1311a;
+    --btn-bg-orange: #c1311a;
     --btn-bg-pink: #c31a58;
     --btn-bg-pink-low: #140523;
     --btn-shadow-pink: #c31a58a1;
@@ -29,12 +30,15 @@
 .btn-bg-green {
     background: var(--btn-bg-green);
 }
+
 .btn-bg-orange {
     background: var(--btn-bg-orange);
 }
+
 .btn-bg-pink-low {
-background: var(--btn-bg-pink-low);
+    background: var(--btn-bg-pink-low);
 }
+
 .btn-shadow-pink {
     box-shadow: 0px 6px 1px var(--btn-shadow-pink);
 
@@ -65,8 +69,8 @@ body {
     padding: 20px 20px 0 20px;
     font-weight: 900;
     font-family: 'Courier New', Courier, monospace;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
 
 }
 
@@ -90,21 +94,25 @@ a:hover {
     transform: scale(1.5);
     overflow: hidden;
 }
+
 footer a:hover {
- background: none;
- color: none;
+    background: none;
+    color: none;
 }
-.footer a{
+
+.footer a {
     width: 50px;
     padding: 10px;
     background: var(--text-color);
     border-radius: 100%;
 }
+
 .footer {
     background: var(--btn-bg-orange);
     padding: 20px;
     border-radius: 50px;
 }
+
 .transition {
     transition: .5s all;
 
@@ -128,9 +136,11 @@ footer a:hover {
 .object-fit-cover {
     object-fit: cover;
 }
+
 .overflow-hidden {
     overflow: hidden;
 }
+
 .aspect-ratio-square {
     aspect-ratio: 1/1;
 
@@ -145,12 +155,14 @@ footer a:hover {
     padding: 20px;
     font-size: 1.2rem;
 }
+
 .mini-badge {
     background: var(--btn-bg-orange) !important;
     padding: 10px;
     font-size: .7rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+
 .btn-scroll-top {
     position: fixed;
     bottom: 20px;
@@ -162,11 +174,34 @@ footer a:hover {
     aspect-ratio: 1/1;
     box-shadow: 2px 2px 4px var(--btn-shadow-pink);
 }
-/* .btn-carrousel-prev {
-    background: black;
-} */
+
+.section-patrons-container-patron {
+    overflow: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.section-patrons-patron {
+    min-width: 40%;
+    max-width: 40%;
+}
+
+@media screen and (max-width: 500px) {
+    .section-patrons-patron {
+        min-width: 100%;
+        max-width: 100%;
+        scroll-snap-align: center
+    }
+}
+
+.section-patrons-patron img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .wobble-hor-bottom {
-	-webkit-animation: wobble-hor-bottom 1.8s backwards 1;
-	        animation: wobble-hor-bottom 1.8s backwards 1;
-        
+    -webkit-animation: wobble-hor-bottom 1.8s backwards 1;
+    animation: wobble-hor-bottom 1.8s backwards 1;
+
 }
