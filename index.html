@@ -41,8 +41,8 @@
   </nav>
   <main class="d-flex flex-column gap-5">
     <section class="container section-introduction" id="introduction">
-      <div class="row align-items-start text-font-big gap-5 justify-content-center">
-        <div class="col-md-5 col-sm-10 text-center text-sm-center text-md-start">
+      <div class="row align-items-start text-font-big gap-5 justify-content-center align-items-center">
+        <div class="col-md-5 col-sm-10 text-center text-sm-center text-md-start order-2 order-md-1">
           <div class="card text-color body-bg">
             <p class="card-header fs-6">Hola me llamo</p>
             <div class="card-body">
@@ -58,7 +58,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-5 col-sm-10">
+        <div class="col-md-5 col-sm-10 order-1 order-md-2">
           <img src="./public/assets/Designer.jpeg" alt="" class="border-pink rounded-circle">
         </div>
 
@@ -66,19 +66,133 @@
     </section>
     <section class="container section-projects">
       <h2 class="text-center p-5 fw-bolder text-color" id="proyectos">Proyectos</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 gy-3">
         <div class="col">
-          <div class="card h-100 border-pink-light">
+          <div class="body-bg card h-100 border-pink-light">
             <img src="./public/imagenes/app-compress-preview.png"
-              class="card-img-top object-fit-cover aspect-ratio-square height-relative-viewport" alt="...">
-            <div class="card-body btn-bg-pink-low text-color">
-              <!-- <h5 class="card-title">Card title</h5> -->
-              <p class="card-text">Una simple app para comoprimir multiples archivos a png y jpg</p>
+              class="p-2 card-img-top object-fit-cover aspect-ratio-square height-relative-viewport" alt="...">
+            <div class="card-body btn-bg-pink-low text-color d-flex flex-column justify-content-between gap-3">
+              <p class="card-text text-center">App web para comprimir multiples archivos a png y jpg</p>
+              <div class="d-flex justify-content-center flex-wrap gap-3">
+                <span class="badge mini-badge">expressjs</span>
+                <span class="badge mini-badge">nunjucks</span>
+              </div>
+              <div class="btn-group d-flex justify-content-center align-items-center gap-3"><a href=""
+                  class="btn-bg-pink px-3 py-2 non-shadow btn-shadow-pink transition">En vivo</a><a href=""
+                  class="btn-bg-pink px-3 py-2 non-shadow btn-shadow-pink transition">github</a></div>
             </div>
-            <!-- <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div> -->
           </div>
+
+        </div>
+        <!-- -------------------------- -->
+        <div class="col">
+          <div class="body-bg card h-100 border-pink-light">
+            <img src="./public/imagenes/modify-background-preview.png"
+              class="p-2 card-img-top object-fit-cover aspect-ratio-square height-relative-viewport" alt="...">
+            <div class="card-body btn-bg-pink-low text-color d-flex flex-column justify-content-between">
+              <p class="card-text text-center">App web para remplazar y remover el fondo</p>
+              <div class="d-flex justify-content-center flex-wrap gap-3">
+                <span class="badge mini-badge">Nextjs</span>
+                <span class="badge mini-badge">Cloudinary API</span>
+              </div>
+              <div class="btn-group d-flex justify-content-center align-items-center gap-3"><a href=""
+                  class="btn-bg-pink px-3 py-2 non-shadow btn-shadow-pink transition">En vivo</a><a href=""
+                  class="btn-bg-pink px-3 py-2 non-shadow btn-shadow-pink transition">github</a></div>
+            </div>
+          </div>
+
+        </div>
+        <!-- ---------------------------------- -->
+        <div class="col">
+          <div class="body-bg card h-100 border-pink-light">
+            <img src="./public/imagenes/Screenshot 2024-12-06 233442.jpeg"
+              class="p-2 card-img-top object-fit-cover aspect-ratio-square height-relative-viewport" alt="...">
+            <div class="card-body btn-bg-pink-low text-color d-flex flex-column justify-content-between">
+              <p class="card-text text-center">Un formulario de multiples pasos </p>
+              <div class="d-flex justify-content-center flex-wrap gap-3">
+                <span class="badge mini-badge">Reactjs</span>
+              </div>
+              <div class="btn-group d-flex justify-content-center align-items-center gap-3"><a href=""
+                  class="btn-bg-pink px-3 py-2 non-shadow btn-shadow-pink transition">En vivo</a><a href=""
+                  class="btn-bg-pink px-3 py-2 non-shadow btn-shadow-pink transition">github</a></div>
+            </div>
+          </div>
+
+        </div>
+        <!-- ---------------------------------------------- -->
+        <div class="col">
+          <div class="body-bg card h-100 border-pink-light">
+            <img src="./public/imagenes/todo-app-preview.png"
+              class="p-2 card-img-top object-fit-cover aspect-ratio-square height-relative-viewport" alt="...">
+            <div class="card-body btn-bg-pink-low text-color d-flex flex-column justify-content-between">
+              <p class="card-text text-center">Todo app con soporte para tema claro y oscuro</p>
+              <div class="d-flex justify-content-center flex-wrap gap-3">
+                <span class="badge mini-badge">Reactjs</span>
+                <span class="badge mini-badge">Typescript</span>
+              </div>
+
+              <div class="btn-group d-flex justify-content-center align-items-center gap-3"><a href=""
+                  class="btn-bg-pink px-3 py-2 non-shadow btn-shadow-pink transition">En vivo</a><a href=""
+                  class="btn-bg-pink px-3 py-2 non-shadow btn-shadow-pink transition">github</a></div>
+            </div>
+          </div>
+
+        </div>
+        <!-- ----------------------------------------------------------- -->
+        <div class="col">
+          <div class="body-bg card h-100 border-pink-light">
+            <img src="./public/imagenes/Screenshot 2024-12-07 001112.jpeg"
+              class="p-2 card-img-top object-fit-cover aspect-ratio-square height-relative-viewport" alt="...">
+            <div class="card-body btn-bg-pink-low text-color d-flex flex-column justify-content-between gap-3">
+
+              <p class="card-text text-center">Catálogo de productos</p>
+              <div class="d-flex justify-content-center flex-wrap gap-3">
+                <span class="badge mini-badge">HTML</span>
+                <span class="badge mini-badge">CSS</span>
+                <span class="badge mini-badge">VanillaJs</span>
+              </div>
+              <div class="btn-group d-flex justify-content-center align-items-center gap-3"><a href=""
+                  class="btn-bg-pink px-3 py-2 non-shadow btn-shadow-pink transition">En vivo</a><a href=""
+                  class="btn-bg-pink px-3 py-2 non-shadow btn-shadow-pink transition">github</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------------------------ -->
+        <div class="col">
+          <div class="body-bg card h-100 border-pink-light">
+            <img src="./public/imagenes/Screenshot 2024-12-06 235644.jpeg"
+              class="p-2 card-img-top object-fit-cover aspect-ratio-square height-relative-viewport" alt="...">
+            <div class="card-body btn-bg-pink-low text-color d-flex flex-column justify-content-between gap-3">
+              <p class="card-text text-center">Pagina de productos con carrito de compras hecho con React</p>
+              <div class="d-flex justify-content-center flex-wrap gap-3">
+                <span class="badge mini-badge">HTML</span>
+                <span class="badge mini-badge">CSS</span>
+                <span class="badge mini-badge">VanillaJs</span>
+              </div>
+              <div class="btn-group d-flex justify-content-center align-items-center gap-3"><a href=""
+                  class="btn-bg-pink px-3 py-2 non-shadow btn-shadow-pink transition">En vivo</a><a href=""
+                  class="btn-bg-pink px-3 py-2 non-shadow btn-shadow-pink transition">github</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------------------ -->
+        <div class="col">
+          <div class="body-bg card h-100 border-pink-light">
+            <img src="./public/imagenes/Screenshot 2024-12-06 233214.jpeg"
+              class="p-2 card-img-top object-fit-cover aspect-ratio-square height-relative-viewport" alt="...">
+            <div class="card-body btn-bg-pink-low text-color d-flex flex-column justify-content-between gap-3">
+              <p class="card-text text-center">Variante del juego piedra papel y tijera</p>
+              <div class="d-flex justify-content-center flex-wrap gap-3">
+                <span class="badge mini-badge">HTML</span>
+                <span class="badge mini-badge">CSS</span>
+                <span class="badge mini-badge">VanillaJs</span>
+              </div>
+              <div class="btn-group d-flex justify-content-center align-items-center gap-3"><a href=""
+                  class="btn-bg-pink px-3 py-2 non-shadow btn-shadow-pink transition">En vivo</a><a href=""
+                  class="btn-bg-pink px-3 py-2 non-shadow btn-shadow-pink transition">github</a></div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -102,16 +216,19 @@
     </section>
     <section class="container text-color">
       <h2 class="text-center fw-bolder text-color" id="sobre mi">Sobre mi</h2>
-      <p class="text-color text-center">¡Hola! soy un entusiasta programador en busca de oportunidades para embarcarme en mi primer
+      <p class="text-color text-center">¡Hola! soy un entusiasta programador en busca de oportunidades para embarcarme
+        en mi primer
         trabajo como freelancer y adquirir experiencia en el emocionante mundo del desarrollo de software. Aunque soy
         principiante, estoy comprometido con el aprendizaje continuo y en mejorar mis habilidades día a día.</p>
       <h3 class="fw-bolder text-center ">Objetivos</h3>
-      <p class="text-center">Mi objetivo como programador principiante es colaborar en proyectos que me permitan crecer profesionalmente,
+      <p class="text-center">Mi objetivo como programador principiante es colaborar en proyectos que me permitan crecer
+        profesionalmente,
         aprender de la experiencia y contribuir de manera positiva. Estoy ansioso por encontrar oportunidades para
         trabajar en equipo, enfrentar desafíos y ofrecer soluciones innovadoras.</p>
 
-      <p class="text-center">¡Estoy emocionado por la oportunidad de aprender y crecer como freelancer en el mundo del desarrollo de software!
-      ¡Contáctame para explorar cómo puedo contribuir a tus proyectos!</p>
+      <p class="text-center">¡Estoy emocionado por la oportunidad de aprender y crecer como freelancer en el mundo del
+        desarrollo de software!
+        ¡Contáctame para explorar cómo puedo contribuir a tus proyectos!</p>
     </section>
     <footer class="container footer d-flex justify-content-center align-items-start">
       <div class="d-flex gap-5 flex-wrap justify-content-center" id="contacto">
