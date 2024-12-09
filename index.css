@@ -65,6 +65,9 @@ body {
     padding: 20px 20px 0 20px;
     font-weight: 900;
     font-family: 'Courier New', Courier, monospace;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+
 }
 
 img {
@@ -145,7 +148,8 @@ footer a:hover {
 .mini-badge {
     background: var(--btn-bg-orange) !important;
     padding: 10px;
-    font-size: .6rem;
+    font-size: .7rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 .btn-scroll-top {
     position: fixed;
@@ -158,7 +162,9 @@ footer a:hover {
     aspect-ratio: 1/1;
     box-shadow: 2px 2px 4px var(--btn-shadow-pink);
 }
-
+/* .btn-carrousel-prev {
+    background: black;
+} */
 .wobble-hor-bottom {
 	-webkit-animation: wobble-hor-bottom 1.8s backwards 1;
 	        animation: wobble-hor-bottom 1.8s backwards 1;
